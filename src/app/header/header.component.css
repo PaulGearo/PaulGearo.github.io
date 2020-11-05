@@ -46,6 +46,7 @@ body {
     float: none;
     display: block;
     text-align: left;
+    padding-bottom: 300px;
   }
   
   .header-right {

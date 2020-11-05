@@ -1,0 +1,8 @@
+.center {
+    margin: auto;
+    width: 50%;
+    border: 2px  rgba(45, 58, 240, 0.7);
+    padding: 10px;
+    border-style: groove;
+    border-radius: 15px;
+  }

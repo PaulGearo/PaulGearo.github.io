@@ -1,0 +1,82 @@
+
+body{
+    display: table-cell;
+    vertical-align: middle;
+}
+body,
+.container,
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 320px;
+    height: 320PX;
+    border-radius: 50%;
+    padding: 50px;
+    transition: 0.5s;
+    z-index: 1;
+}
+.social {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    transform: translateY(0px);
+    transition: 0.5s;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(45, 58, 240, 0.7);
+}
+.container:hover {
+    width: 250px;
+    height: 250px;
+}
+.container:hover .social {
+    transition: 0.5s;
+    box-shadow: 0 0 20px  rgba(45, 58, 240, 0.7);
+ }
+.container:hover .social:nth-child(1) {
+    transform: rotate(-60deg) translateY(-120px);
+}
+.container:hover .social:nth-child(2) {
+    transition-delay: 0.1s;
+    transform: rotate(-30deg) translateY(-120px);
+}
+.container:hover .social:nth-child(3) {
+    transition-delay: 0.2s;
+    transform: rotate(0deg) translateY(-120px);
+}
+.container:hover .social:nth-child(4) {
+    transition-delay: 0.3s;
+    transform: rotate(30deg) translateY(-120px);
+}
+.container:hover .social:nth-child(5) {
+    transition-delay: 0.4s;
+    transform: rotate(60deg) translateY(-120px);
+} 
+
+a {
+     color: black;
+} 
+
+i{
+    transition: 0.7s
+}
+
+.social:hover i {
+    transform: rotate(360deg);
+    color: rgba(45, 58, 240, 0.7);
+}
+
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+  }
